@@ -12,11 +12,12 @@ namespace MastoPerf
     public class TestViewModel
     {
         private TimelineStreaming streaming;
-
+        private HttpClient client;
         public TestViewModel()
         {
+            this.client = new HttpClient();
             this.Statuses = new ObservableCollection<Status>();
-            var client = new MastodonClient("mastodon.social", string.Empty);
+            var client = new MastodonClient("mastodon.social", string.Empty, this.client);
             this.streaming = client.GetPublicStreaming();
             this.streaming.OnUpdate += this.StreamingOnUpdate;
             this.streaming.OnDelete += this.StreamingOnDelete;
