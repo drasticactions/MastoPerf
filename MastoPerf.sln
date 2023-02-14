@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MastoPerf", "MastoPerf\MastoPerf.csproj", "{456BC7ED-33FE-4B51-96EC-56652FA9860C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MastoPerf.TestMaui", "MastoPerf.TestMaui\MastoPerf.TestMaui.csproj", "{A56B015D-28D9-41C4-9CD1-51A0E4093AFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{456BC7ED-33FE-4B51-96EC-56652FA9860C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456BC7ED-33FE-4B51-96EC-56652FA9860C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456BC7ED-33FE-4B51-96EC-56652FA9860C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456BC7ED-33FE-4B51-96EC-56652FA9860C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56B015D-28D9-41C4-9CD1-51A0E4093AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56B015D-28D9-41C4-9CD1-51A0E4093AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56B015D-28D9-41C4-9CD1-51A0E4093AFE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A56B015D-28D9-41C4-9CD1-51A0E4093AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56B015D-28D9-41C4-9CD1-51A0E4093AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56B015D-28D9-41C4-9CD1-51A0E4093AFE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B58D8413-869F-4D10-BCAB-4392A0501D68}
+	EndGlobalSection
+EndGlobal

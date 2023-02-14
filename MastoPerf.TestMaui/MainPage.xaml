@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MastoPerf.TestMaui.MainPage">
+    <CollectionView ItemsSource="{Binding Statuses, Mode=OneWay}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="{Binding Account.AvatarUrl}"/>
+                    <Grid x:Name="StatusGrid" Margin="5" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Padding="5,0,5,0" Text="{Binding Account.UserName}" FontAttributes="Bold" />
+                                <Label Grid.Column="1" Padding="5,0,5,0" HorizontalOptions="CenterAndExpand" Text="{Binding Account.AccountName}" />
+                                <Label Grid.Column="2" Padding="5,0,5,0" HorizontalOptions="End" Text="{Binding CreatedAt}" />
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Label Text="{Binding Content}" TextType="Html" />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>
