@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "MastoPerf.UnoApp.Windows": {
+      "commandName": "MsixPackage"
+    }
+  }
+}
