@@ -37,8 +37,12 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\external\Mastonet\Mastonet\Mastonet.csproj" />
-    <ProjectReference Include="..\MastoPerf\MastoPerf.csproj" />
+    <ProjectReference Include="..\external\Mastonet\Mastonet\Mastonet.csproj">
+      <ReferenceSourceTarget></ReferenceSourceTarget>
+    </ProjectReference>
+    <ProjectReference Include="..\MastoPerf\MastoPerf.csproj">
+      <ReferenceSourceTarget></ReferenceSourceTarget>
+    </ProjectReference>
   </ItemGroup>
 
   <!-- 
