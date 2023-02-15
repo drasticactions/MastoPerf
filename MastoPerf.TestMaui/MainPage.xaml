@@ -22,7 +22,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0" HorizontalTextAlignment="Center" Text="{Binding Count, StringFormat='Total Count: {0}'}"/>
-            <Label Grid.Column="2" HorizontalTextAlignment="Center" Text="{Binding StatusCollectionCount, StringFormat='In Collection: {0}'}"/>
+            <Label Grid.Column="1" HorizontalTextAlignment="Center" Text="{Binding StatusCollectionCount, StringFormat='In Collection: {0}'}"/>
         </Grid>
         <ListView Grid.Row="2" ItemsSource="{Binding Statuses, Mode=OneWay}">
             <ListView.ItemTemplate>

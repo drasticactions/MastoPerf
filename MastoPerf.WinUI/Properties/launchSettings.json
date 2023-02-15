@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MastoPerf.WinUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "MastoPerf.WinUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
