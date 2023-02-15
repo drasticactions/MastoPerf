@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mastonet", "external\Maston
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MastoPerf.WinUI", "MastoPerf.WinUI\MastoPerf.WinUI.csproj", "{2E326B45-4365-4EF5-8ADD-16F82C8FB1DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MastoPerf.WPF", "MastoPerf.WPF\MastoPerf.WPF.csproj", "{6E7B5ECF-DBA3-4FE4-9252-099F0ABDEFEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MastoPerf.WPF", "MastoPerf.WPF\MastoPerf.WPF.csproj", "{6E7B5ECF-DBA3-4FE4-9252-099F0ABDEFEA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MastoPerf.AvaloniaApp", "MastoPerf.AvaloniaApp\MastoPerf.AvaloniaApp.csproj", "{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +115,22 @@ Global
 		{6E7B5ECF-DBA3-4FE4-9252-099F0ABDEFEA}.Release|x64.Build.0 = Release|Any CPU
 		{6E7B5ECF-DBA3-4FE4-9252-099F0ABDEFEA}.Release|x86.ActiveCfg = Release|Any CPU
 		{6E7B5ECF-DBA3-4FE4-9252-099F0ABDEFEA}.Release|x86.Build.0 = Release|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Debug|x64.Build.0 = Debug|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Debug|x86.Build.0 = Debug|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Release|ARM64.Build.0 = Release|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Release|x64.ActiveCfg = Release|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Release|x64.Build.0 = Release|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Release|x86.ActiveCfg = Release|Any CPU
+		{71CF2AA6-11EF-4DE7-87A2-2BBCADD6803C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
