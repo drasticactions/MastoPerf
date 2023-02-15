@@ -72,7 +72,7 @@ namespace MastoPerf
         {
             this.Statuses.Insert(0, e.Status);
 
-            if (this.Statuses.Count > 500)
+            if (this.Statuses.Count > 250)
                 this.Statuses.RemoveAt(this.Statuses.Count - 1);
 
             this.Count = this.Count + 1;
