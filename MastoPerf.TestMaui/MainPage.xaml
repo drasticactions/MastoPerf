@@ -33,7 +33,7 @@
                                 <ColumnDefinition Width="50"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Image Source="{Binding Account.AvatarUrl}"/>
+                            <!--<Image Source="{Binding Account.AvatarUrl}"/>-->
                             <Grid x:Name="StatusGrid" Margin="5" Grid.Column="1">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="*"/>
