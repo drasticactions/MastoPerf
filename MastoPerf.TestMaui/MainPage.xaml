@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:entities="clr-namespace:Mastonet.Entities;assembly=Mastonet"
              x:Class="MastoPerf.TestMaui.MainPage">
     <Grid RowSpacing="5">
         <Grid.RowDefinitions>
@@ -24,16 +25,16 @@
             <Label Grid.Column="0" HorizontalTextAlignment="Center" Text="{Binding Count, StringFormat='Total Count: {0}'}"/>
             <Label Grid.Column="1" HorizontalTextAlignment="Center" Text="{Binding StatusCollectionCount, StringFormat='In Collection: {0}'}"/>
         </Grid>
-        <ListView Grid.Row="2" ItemsSource="{Binding Statuses, Mode=OneWay}">
+        <!--<ListView Grid.Row="2" ItemsSource="{Binding Statuses, Mode=OneWay}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid>
+                        <Grid x:DataType="entities:Status">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="50"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <!--<Image Source="{Binding Account.AvatarUrl}"/>-->
+                            <Image Source="{Binding Account.AvatarUrl}"/>
                             <Grid x:Name="StatusGrid" Margin="5" Grid.Column="1">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="*"/>
@@ -65,11 +66,11 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
-        <!--<CollectionView Grid.Row="2" ItemsSource="{Binding Statuses, Mode=OneWay}">
+        </ListView>-->
+        <CollectionView Grid.Row="2" ItemsSource="{Binding Statuses, Mode=OneWay}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Grid>
+                    <Grid x:DataType="entities:Status">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="50"/>
                             <ColumnDefinition Width="*"/>
@@ -105,6 +106,6 @@
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
-        </CollectionView>-->
+        </CollectionView>
     </Grid>
 </ContentPage>
