@@ -62,10 +62,10 @@ namespace MastoPerf
 
         private void StreamingOnDelete(object? sender, StreamDeleteEventArgs e)
         {
-            if (this.Statuses.FirstOrDefault(n => n.Id == e.StatusId.ToString()) is Status status)
-            {
-                this.Statuses.Remove(status);
-            }
+            //if (this.Statuses.FirstOrDefault(n => n.Id == e.StatusId.ToString()) is Status status)
+            //{
+            //    this.Statuses.Remove(status);
+            //}
         }
 
         private void StreamingOnUpdate(object? sender, StreamUpdateEventArgs e)
