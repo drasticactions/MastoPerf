@@ -68,7 +68,7 @@
                                         <TextBlock Grid.Column="2" Padding="5,0,5,0" HorizontalAlignment="Right" Text="{Binding CreatedAt}" />
                                     </Grid>
                                     <Grid Grid.Row="1">
-                                        <TextBlock Text="{Binding Content}" />
+                                        <TextBlock TextWrapping="Wrap" Text="{Binding Content}" />
                                     </Grid>
                                 </Grid>
                             </Grid>
