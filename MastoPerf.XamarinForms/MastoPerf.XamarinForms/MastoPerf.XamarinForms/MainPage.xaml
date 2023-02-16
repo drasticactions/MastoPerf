@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:entities="clr-namespace:Mastonet.Entities;assembly=Mastonet"
+             x:Class="MastoPerf.XamarinForms.MainPage">
+
+    <Grid RowSpacing="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" ColumnSpacing="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="Start Streaming" Clicked="Button_Clicked"/>
+            <Button Grid.Column="1" Text="Stop Streaming" Clicked="Button_Clicked_1"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" HorizontalTextAlignment="Center" Text="{Binding Count, StringFormat='Total Count: {0}'}"/>
+            <Label Grid.Column="1" HorizontalTextAlignment="Center" Text="{Binding StatusCollectionCount, StringFormat='In Collection: {0}'}"/>
+        </Grid>
+        <!--<ListView Grid.Row="2" ItemsSource="{Binding Statuses, Mode=OneWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid x:DataType="entities:Status">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding Account.AvatarUrl}"/>
+                            <Grid x:Name="StatusGrid" Margin="5" Grid.Column="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Row="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Padding="5,0,5,0" Text="{Binding Account.UserName}" FontAttributes="Bold" />
+                                        <Label Grid.Column="1" Padding="5,0,5,0" HorizontalOptions="CenterAndExpand" Text="{Binding Account.AccountName}" />
+                                        <Label Grid.Column="2" Padding="5,0,5,0" HorizontalOptions="End" Text="{Binding CreatedAt}" />
+                                    </Grid>
+                                    <Grid Grid.Row="1">
+                                        <Label Text="{Binding Content}" TextType="Text" />
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+        <CollectionView Grid.Row="2" ItemsSource="{Binding Statuses, Mode=OneWay}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid x:DataType="entities:Status">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding Account.AvatarUrl}"/>
+                        <Grid x:Name="StatusGrid" Margin="5" Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Padding="5,0,5,0" Text="{Binding Account.UserName}" FontAttributes="Bold" />
+                                    <Label Grid.Column="1" Padding="5,0,5,0" HorizontalOptions="CenterAndExpand" Text="{Binding Account.AccountName}" />
+                                    <Label Grid.Column="2" Padding="5,0,5,0" HorizontalOptions="End" Text="{Binding CreatedAt}" />
+                                </Grid>
+                                <Grid Grid.Row="1">
+                                    <Label Text="{Binding Content}" TextType="Text" />
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+</ContentPage>
