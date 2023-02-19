@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net7.0-ios</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\external\Mastonet\Mastonet\Mastonet.csproj" />
+		<ProjectReference Include="..\MastoPerf\MastoPerf.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Drastic.PureLayout" Version="1.0.4" />
+	  <PackageReference Include="Drastic.FDTemplateLayoutCell" Version="1.0.0" />
+	  <PackageReference Include="Drastic.Masonry" Version="1.0.0" />
+	</ItemGroup>
+</Project>
