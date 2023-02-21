@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -89,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MastoPerf.XamarinForms\MastoPerf.XamarinForms.csproj">
-      <Project>{9C01E14D-B664-4C98-8B37-60F6F1E6D43D}</Project>
+      <Project>{9EEA7BDB-4DAF-41A3-B065-A1B9F7A42736}</Project>
       <Name>MastoPerf.XamarinForms</Name>
     </ProjectReference>
   </ItemGroup>

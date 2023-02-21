@@ -25,7 +25,7 @@
             <Label Grid.Column="0" HorizontalTextAlignment="Center" Text="{Binding Count, StringFormat='Total Count: {0}'}"/>
             <Label Grid.Column="1" HorizontalTextAlignment="Center" Text="{Binding StatusCollectionCount, StringFormat='In Collection: {0}'}"/>
         </Grid>
-        <!--<ListView Grid.Row="2" ItemsSource="{Binding Statuses, Mode=OneWay}">
+        <ListView Grid.Row="2" HasUnevenRows="True" ItemsSource="{Binding Statuses, Mode=OneWay}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -66,8 +66,8 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>-->
-        <CollectionView Grid.Row="2" ItemsSource="{Binding Statuses, Mode=OneWay}">
+        </ListView>
+        <!-- <CollectionView Grid.Row="2" ItemsSource="{Binding Statuses, Mode=OneWay}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid x:DataType="entities:Status">
@@ -106,6 +106,6 @@
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
-        </CollectionView>
+        </CollectionView> -->
     </Grid>
 </ContentPage>

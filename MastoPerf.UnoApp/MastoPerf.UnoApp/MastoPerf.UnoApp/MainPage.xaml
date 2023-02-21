@@ -9,7 +9,7 @@
     xmlns:entities="using:Mastonet.Entities"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid RowSpacing="5" x:Name="MainGrid">
+    <Grid Margin="0,50,0,0" RowSpacing="5" x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
